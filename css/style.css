@@ -7,7 +7,20 @@ body{
   color: #222222;
   font-family: 'Montserrat', sans-serif;
 }
-
+.btu{
+  background-color: #feed5a;
+  color: rgba(255, 255, 255, 255);
+  padding: 10px 30px ;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.btu:hover{
+  background: transparent;
+  border: 1px solid #222222;
+}
 /* navbar  */
 .navbar {
   padding: 20px;
@@ -78,12 +91,30 @@ body{
   font-style: normal;
   letter-spacing: 0px;
   text-align: center;
+  margin-bottom: 0;
 }
 .carousel-caption h5 span , .carousel-caption p span{
   font-size: 120px;
   font-family: 'Slackey', cursive;
 }
 
+.carousel-control-prev i , .carousel-control-next i{
+  font-size: 52px;
+  color: #222222;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.carousel-control-prev i:hover ,.carousel-control-next i:hover {
+  color: #feed5a;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 37px;
+}
 
 
 @media(min-width:768px) and (max-width:991px){
@@ -98,7 +129,6 @@ body{
     font-size: 30px;
   }
 }
-
 
 @media(max-width:767px){
   .carousel-caption h5 , .carousel-caption p{
@@ -118,5 +148,150 @@ body{
   position: absolute;
   top: 5%;
 }
+.carousel-control-prev {
+  left: 20px;
+  top: 8px;
+}
+.carousel-control-next {
+  right:20px;
+  top: 8px;
+}
+.btu{
+  padding: 5px 10px !important;
+}
 }
 
+/* about */
+.about{
+  padding: 50px 20px;
+}
+.about-dec{
+  padding: 60px;
+}
+.about-dec h5{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 11px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0);
+}
+.about-dec h2{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: -1.3px;
+  width: 44%;
+}
+.about-body{
+  padding: 20px 72px;
+}
+.about-body p:first-child{
+  color: #222222;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: none;
+  font-style: normal;
+  line-height: 2.1em;
+  letter-spacing: 0.45px;
+  width: 90%;
+}
+.about-body p:last-child{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.1em;
+}
+.stat-item h3{
+  color: #222222;
+  font-family: 'Slackey', cursive;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+.stat-item p{
+  font-family: "Montserrat", Sans-serif;
+}
+.stat-item{
+  position: relative;
+}
+.stat-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 84px;
+  height: 3px;
+  background-color: #feed5a;
+}
+@media(max-width:991px){
+  .about-dec {
+    padding: 60px 6px;
+}
+.about-dec h2 {
+  font-size: 34px;
+  width: 84%;
+}
+.about-body {
+  padding: 20px 0px;
+}
+}
+@media(max-width:767px){
+  .about{
+    padding: 123px 20px !important;
+  }
+  .about-dec {
+    padding: 20px 0px;
+}
+.about-dec h2 {
+  width: 100%;
+  font-size: 33px;
+}
+.about-body {
+  padding: 20px 0px;
+}
+}
+/* selling */
+.selling-dec h2{
+  font-family: 'Slackey', cursive;
+  font-size: 52px;
+  font-weight: 800;
+  text-transform: none;
+  font-style: normal;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+  margin-bottom: 30px;
+}
+.selling-dec p {
+  color: #222222;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  line-height: 2.1em;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+}
+.selling-dec .btu{
+  background: transparent;
+  border: 1px solid #222222;
+  color: #222222;
+}
+.selling-dec .btu:hover{
+  background: #feed5a;
+  border: 1px solid #feed5a;
+}
+.selling-img{
+  overflow: hidden;
+  position: relative;
+}
+.selling-img-element{
+  position: absolute;
+  bottom: 30px;
+  left:40px;
+}
