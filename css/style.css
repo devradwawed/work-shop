@@ -6,6 +6,7 @@
 body{
   color: #222222;
   font-family: 'Montserrat', sans-serif;
+  height: 10000px;
 }
 .btu{
   background-color: #feed5a;
@@ -230,7 +231,7 @@ body{
 }
 @media(max-width:991px){
   .about-dec {
-    padding: 60px 6px;
+    padding: 60px 6px 0;
 }
 .about-dec h2 {
   font-size: 34px;
@@ -242,7 +243,7 @@ body{
 }
 @media(max-width:767px){
   .about{
-    padding: 123px 20px !important;
+    padding: 123px 20px 0 !important;
   }
   .about-dec {
     padding: 20px 0px;
@@ -294,4 +295,191 @@ body{
   position: absolute;
   bottom: 30px;
   left:40px;
+}
+@media(max-width:767px){
+  .selling-dec h2{
+    font-size: 45px;
+  }
+}
+/* start  Hotoffer */
+.hotoffer{
+  margin-top: -66px;
+}
+.hotoffer .hotoffer-img{
+  background-image: url("../images/Mask-Group-2.png");
+  background-color: #3c3c3c;
+  width: 107%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  padding: 0 40px;
+}
+.hotoffer .hotoffer-img h2{
+  font-family: "Slackey", Sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: normal;
+  letter-spacing: 0px;
+  /* width: 40%; */
+  color: #e8e7e7;
+}
+.hotoffer .hotoffer-img p{
+  color: #feed5a;
+  font-family: "Slackey", Sans-serif;
+  font-size: 22px;
+}
+.hotoffer .hotoffer-img .btu{
+  background: transparent;
+  border: 1px solid #feed5a;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: #e8e7e7;
+}
+.hotoffer .hotoffer-img .btu:hover{
+  background-color: #feed5a;
+  color: #3c3c3c;
+}
+.hotoffer .hotoffer-dec{
+  padding: 208px 123px 0;
+}
+
+.hotoffer .hotoffer-dec h2{
+  font-family: "Slackey", Sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: -1.2px;
+}
+@media(max-width:570px){
+  .hotoffer .hotoffer-img h2 {
+    font-size: 46px;
+  }
+}
+@media(max-width:767px){
+  .hotoffer {
+    margin-top: 59px;
+}
+  .hotoffer .hotoffer-img{
+    width: 100%;
+  }
+  .hotoffer .hotoffer-dec{
+    padding: 31px 0;
+  }
+  .hotoffer .hotoffer-dec h2{
+    font-size: 52px;
+  }
+}
+
+@media(max-width:991px){
+  .hotoffer {
+    margin-top: 59px;
+}
+.hotoffer .hotoffer-dec{
+  padding: 101px 20px;
+}
+.hotoffer .hotoffer-dec h2{
+  font-size: 47px;
+}
+}
+/* start  Hotoffer */
+
+/* start categories */
+
+.categories{
+  padding: 100px 20px;
+}
+.categories .categories-dec h2{
+  font-family: "Slackey", Sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-style: normal;
+  letter-spacing: -0.8px;
+  color: #222222;
+  padding: 20px 0;
+}
+.categories .categories-link{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 2.1px;
+  color: #222222;
+  display: inline-block;
+  padding: 28px 0 20px 178px;
+}
+.categories .popular-categories-img{
+  padding: 3px;
+  border: 1px solid #e8e7e7;
+  overflow: hidden;
+  position: relative;
+}
+.categories .popular-categories-img img{
+  width: 100%;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.categories .popular-categories-img:hover  img{
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+.categories .popular-categories-img .popular-categories-link{
+  position: absolute;
+  bottom: -30px;
+  left: -40px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.categories .popular-categories-img .popular-categories-link a{
+  font-size: 20px;
+  color: #3c3c3c;
+  font-family: "Slackey", Sans-serif;
+  font-weight: 600;
+}
+.categories .popular-categories-img:hover .popular-categories-link{
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+@media(max-width:767px){
+  .categories .categories-dec h2 {
+    font-size: 29px;
+  }
+  .categories .categories-link {
+    padding: 0px 0 39px 0;
+}
+.categories .popular-categories-img {
+  height: 109px;
+  margin-bottom: 10px;
+}
+}
+/* end categories */
+
+.discount{
+  background-image: url("../images/bacground.png");
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0;
+  text-align: center;
+}
+.discount .discount-dec img{
+  /* width: 100%; */
 }
